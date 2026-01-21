@@ -1,0 +1,49 @@
+┌─────────────────────────────────────────────────────┐
+│         ESP8266 PIN ROUTING SUMMARY                 │
+│         Alat Pemotong Kertas Roll                   │
+└─────────────────────────────────────────────────────┘
+
+═══════════════════════════════════════════════════════
+  MOTOR PEMOTONG KERTAS (Cut Motor)
+═══════════════════════════════════════════════════════
+NodeMCU Pin → GPIO → A4988 Pin → Function
+─────────────────────────────────────────────────────
+D5          → 14   → DIR       → Arah Putaran
+D6          → 12   → STEP      → Langkah Motor
+D7          → 13   → ENABLE    → Aktif/Non-aktif
+
+═══════════════════════════════════════════════════════
+  MOTOR PENARIK KERTAS (Pull Motor)
+═══════════════════════════════════════════════════════
+NodeMCU Pin → GPIO → A4988 Pin → Function
+─────────────────────────────────────────────────────
+D2          → 4    → ENABLE    → Aktif/Non-aktif
+D3          → 0    → DIR       → Arah Putaran
+D4          → 2    → STEP      → Langkah Motor
+
+═══════════════════════════════════════════════════════
+  POWER CONNECTIONS
+═══════════════════════════════════════════════════════
+GND (NodeMCU) → GND (A4988 #1) → GND (A4988 #2) → PSU GND
+12V PSU       → VCC (A4988 #1) dan VCC (A4988 #2)
+ESP8266 Power → 5V via USB atau 3.3V (JANGAN dari 12V!)
+
+═══════════════════════════════════════════════════════
+  IMPORTANT NOTES
+═══════════════════════════════════════════════════════
+⚠️  GPIO0 (D3) - Harus HIGH saat boot (pull-up)
+⚠️  GPIO2 (D4) - Harus HIGH saat boot (built-in LED)
+⚠️  GPIO15 - Harus LOW saat boot (jangan gunakan)
+⚠️  Power - ESP8266 butuh 3.3V, max current per GPIO: 12mA
+
+═══════════════════════════════════════════════════════
+  DOCUMENTATION
+═══════════════════════════════════════════════════════
+📄 Wiring Detail    : ROUTING_PINOUT.md
+📄 WiFi Setup       : WIFI_CONFIG.md
+📄 Arduino Code     : pemotong_kertas.ino
+📄 Hardware Guide   : ../HARDWARE_CONNECTIONS.md (ESP32 ref)
+
+═══════════════════════════════════════════════════════
+Version: 1.0.0 | Last Update: 20 Jan 2026
+═══════════════════════════════════════════════════════
