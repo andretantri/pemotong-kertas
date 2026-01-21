@@ -1,0 +1,25 @@
+{
+    "name": "pemotong-kertas",
+    "version": "1.0.0",
+    "description": "Sistem kontrol mesin pemotong kertas roll otomatis berbasis ESP8266",
+    "main": "index.php",
+    "keywords": [
+        "esp8266",
+        "paper-cutter",
+        "stepper-motor",
+        "php",
+        "react",
+        "iot",
+        "hmi"
+    ],
+    "author": "Paper Cutting Machine Project",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/username/pemotong-kertas.git"
+    },
+    "bugs": {
+        "url": "https://github.com/username/pemotong-kertas/issues"
+    },
+    "homepage": "https://github.com/username/pemotong-kertas#readme"
+}

@@ -1,0 +1,29 @@
+# Laragon
+*.log
+php_errors.log
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# PHP
+vendor/
+composer.lock
+
+# Test files
+test_*.php
+phpinfo.php
+migrate_db.php
+reset_password.php
+
+# Sensitive
+config/database.local.php
+
+# Build
+*.cache
+*.tmp
