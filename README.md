@@ -330,8 +330,8 @@ MIT License - Bebas digunakan untuk keperluan pribadi maupun komersial.
 
 **Paper Cutting Machine Project**
 
-- 📧 Email: [your-email@example.com]
-- 🌐 GitHub: [github.com/username]
+- 📧 Email: [yanuar.andre28@gmail.com]
+- 🌐 GitHub: [github.com/andretantri]
 
 ---
 
